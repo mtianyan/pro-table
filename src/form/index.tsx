@@ -384,7 +384,7 @@ export const proFormItemRender: (props: {
     ellipsis,
     formItemProps,
     index,
-    col,
+    customCol,
     ...rest
   } = item;
   const key = genColumnKey(rest.key, dataIndex, index);
@@ -400,7 +400,7 @@ export const proFormItemRender: (props: {
     }
     return rest.title;
   };
-  if (col !== undefined) {
+  if (customCol !== undefined) {
     return (
       <Col {...colConfig} key={key}>
         <Form.Item
@@ -415,7 +415,7 @@ export const proFormItemRender: (props: {
     );
   }
   return (
-    <Col {...col} key={key}>
+    <Col {...customCol} key={key}>
       <Form.Item
         labelAlign="right"
         label={getTitle()}

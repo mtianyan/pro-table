@@ -163,7 +163,7 @@ export interface ProColumnType<T = unknown>
    */
   order?: number;
 
-  col?: any;
+  customCol?: any;
 }
 
 export interface ProColumnGroupType<RecordType> extends ProColumnType<RecordType> {
