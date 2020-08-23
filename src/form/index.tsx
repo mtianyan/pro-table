@@ -400,9 +400,9 @@ export const proFormItemRender: (props: {
     }
     return rest.title;
   };
-  if (customCol !== undefined) {
+  if (item.customCol !== undefined) {
     return (
-      <Col {...colConfig} key={key}>
+      <Col {...customCol} key={key}>
         <Form.Item
           labelAlign="right"
           label={getTitle()}
@@ -415,7 +415,7 @@ export const proFormItemRender: (props: {
     );
   }
   return (
-    <Col {...customCol} key={key}>
+    <Col {...colConfig} key={key}>
       <Form.Item
         labelAlign="right"
         label={getTitle()}
