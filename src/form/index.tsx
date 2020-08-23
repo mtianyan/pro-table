@@ -400,7 +400,7 @@ export const proFormItemRender: (props: {
     }
     return rest.title;
   };
-  if(col !== undefined){
+  if (col !== undefined) {
     return (
       <Col {...colConfig} key={key}>
         <Form.Item
@@ -413,22 +413,19 @@ export const proFormItemRender: (props: {
         </Form.Item>
       </Col>
     );
-  }else {
-    return (
-      <Col {...col} key={key}>
-        <Form.Item
-          labelAlign="right"
-          label={getTitle()}
-          name={Array.isArray(dataIndex) ? dataIndex : key}
-          {...(isForm && rest)}
-        >
-          {dom}
-        </Form.Item>
-      </Col>
-    );
   }
-
-
+  return (
+    <Col {...col} key={key}>
+      <Form.Item
+        labelAlign="right"
+        label={getTitle()}
+        name={Array.isArray(dataIndex) ? dataIndex : key}
+        {...(isForm && rest)}
+      >
+        {dom}
+      </Form.Item>
+    </Col>
+  );
 };
 
 const dateFormatterMap = {

@@ -162,6 +162,8 @@ export interface ProColumnType<T = unknown>
    * form 的排序
    */
   order?: number;
+
+  col?: any;
 }
 
 export interface ProColumnGroupType<RecordType> extends ProColumnType<RecordType> {
