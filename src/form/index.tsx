@@ -406,6 +406,7 @@ export const proFormItemRender: (props: {
         <Form.Item
           labelAlign="right"
           label={getTitle()}
+          labelCol={customCol.labelCol}
           name={Array.isArray(dataIndex) ? dataIndex : key}
           {...(isForm && rest)}
         >
