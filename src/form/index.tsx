@@ -639,13 +639,9 @@ const FormSearch = <T, U = {}>({
       }
       return;
     }
-    try {
-      const value = await form.validateFields();
-      if (onSubmit) {
-        onSubmit(conversionValue(value, dateFormatter, proColumnsMap) as T);
-      }
-    } catch (error) {
-      // console.log(error)
+    const value = await form.validateFields();
+    if (onSubmit) {
+      onSubmit(conversionValue(value, dateFormatter, proColumnsMap) as T);
     }
   };
 
