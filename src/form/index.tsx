@@ -105,15 +105,15 @@ export interface SearchConfig {
   submitText?: string;
 }
 
-/**
- * 获取最后一行的 offset，保证在最后一列
- * @param length
- * @param span
- */
-const getOffset = (length: number, span: number = 8) => {
-  const cols = 24 / span;
-  return (cols - 1 - (length % cols)) * span;
-};
+// /**
+//  * 获取最后一行的 offset，保证在最后一列
+//  * @param length
+//  * @param span
+//  */
+// const getOffset = (length: number, span: number = 8) => {
+//   const cols = 24 / span;
+//   return (cols - 1 - (length % cols)) * span;
+// };
 
 /**
  * 默认的设置
