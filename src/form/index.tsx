@@ -735,6 +735,7 @@ const FormSearch = <T, U = {}>({
       {({ getPrefixCls }: ConfigConsumerProps) => {
         const className = getPrefixCls('pro-table-search');
         const formClassName = getPrefixCls('pro-table-form');
+        const meColConfig = isForm ? defaultFormColConfig : defaultColConfig;
         return (
           <div
             className={classNames(className, {
@@ -788,7 +789,7 @@ const FormSearch = <T, U = {}>({
                       <>{domList}</>
                     </Form.Item>
                     <Col
-                      {...defaultFormColConfig}
+                      {...meColConfig}
                       // offset={getOffset(domList.length, colSize)}
                       key="option"
                       className={classNames(`${className}-option`, {
