@@ -1,7 +1,7 @@
 import React from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import { Button, Tag, Space, Input } from 'antd';
-import ProTable, { ProColumns, TableDropdown } from '@ant-design/pro-table';
+import ProTable, { ProColumns, TableDropdown } from 'mtianyan-pro-table';
 import request from 'umi-request';
 
 interface GithubIssueItem {

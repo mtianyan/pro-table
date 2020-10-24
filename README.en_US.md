@@ -1,6 +1,6 @@
 [中文](./README.md)
 
-<h1 align="center">@ant-design/pro-table</h1>
+<h1 align="center">mtianyan-pro-table</h1>
 
 <div align="center">
 
@@ -116,14 +116,14 @@ interface IValueEnum {
 ## Usage
 
 ```bash
-npm install @ant-design/pro-table
+npm install mtianyan-pro-table
 # or
-yarn add @ant-design/pro-table
+yarn add mtianyan-pro-table
 ```
 
 ```tsx
 import React, { useState } from 'react';
-import ProTable, { ProColumns } from '@ant-design/pro-table';
+import ProTable, { ProColumns } from 'mtianyan-pro-table';
 import { Input, Button } from 'antd';
 
 const columns: ProColumns[] = [

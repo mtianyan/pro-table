@@ -34,9 +34,9 @@ footer: Open-source MIT Licensed | Copyright © 2017-present
 ## 使用
 
 ```bash
-npm install @ant-design/pro-table
+npm install mtianyan-pro-table
 # or
-yarn add @ant-design/pro-table
+yarn add mtianyan-pro-table
 ```
 
 ## 示例

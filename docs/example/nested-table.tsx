@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProTable, { ProColumns } from '@ant-design/pro-table';
+import ProTable, { ProColumns } from 'mtianyan-pro-table';
 
 const valueEnum = {
   0: 'close',

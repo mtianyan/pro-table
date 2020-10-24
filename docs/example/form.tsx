@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Button } from 'antd';
-import ProTable, { ProColumns } from '@ant-design/pro-table';
+import ProTable, { ProColumns } from 'mtianyan-pro-table';
 import { FormInstance } from 'antd/lib/form';
 
 const valueEnum = {

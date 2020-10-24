@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
-import ProTable, { ProColumns, ActionType } from '@ant-design/pro-table';
+import ProTable, { ProColumns, ActionType } from 'mtianyan-pro-table';
 
 const valueEnum = {
   0: 'close',

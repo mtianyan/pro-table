@@ -15,7 +15,7 @@ import ProTable, {
   msMYIntl,
   ActionType,
   // @ts-ignore
-} from '@ant-design/pro-table';
+} from 'mtianyan-pro-table';
 import request from 'umi-request';
 
 const intlMap = {

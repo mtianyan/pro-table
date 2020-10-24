@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Input } from 'antd';
-import ProTable, { ProColumns, ColumnsState } from '@ant-design/pro-table';
+import ProTable, { ProColumns, ColumnsState } from 'mtianyan-pro-table';
 
 const valueEnum = {
   0: 'close',

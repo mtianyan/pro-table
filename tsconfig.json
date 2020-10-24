@@ -18,7 +18,7 @@
     "declaration": true,
     "skipLibCheck": true,
     "paths": {
-      "@ant-design/pro-table": ["./src"]
+      "mtianyan-pro-table": ["./src"]
     }
   },
   "exclude": [

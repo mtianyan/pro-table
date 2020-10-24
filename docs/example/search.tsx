@@ -1,5 +1,5 @@
 import React from 'react';
-import ProTable, { ProColumns } from '@ant-design/pro-table';
+import ProTable, { ProColumns } from 'mtianyan-pro-table';
 import { PlusOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 
