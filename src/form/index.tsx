@@ -788,6 +788,7 @@ const FormSearch = <T, U = {}>({
                       <>{domList}</>
                     </Form.Item>
                     <Col
+                      {...defaultFormColConfig}
                       offset={getOffset(domList.length, colSize)}
                       key="option"
                       className={classNames(`${className}-option`, {
