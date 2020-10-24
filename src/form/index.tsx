@@ -110,10 +110,10 @@ export interface SearchConfig {
 //  * @param length
 //  * @param span
 //  */
-// const getOffset = (length: number, span: number = 8) => {
-//   const cols = 24 / span;
-//   return (cols - 1 - (length % cols)) * span;
-// };
+const getOffset = (length: number, span: number = 8) => {
+  const cols = 24 / span;
+  return (cols - 1 - (length % cols)) * span;
+};
 
 /**
  * 默认的设置
@@ -736,6 +736,7 @@ const FormSearch = <T, U = {}>({
         const className = getPrefixCls('pro-table-search');
         const formClassName = getPrefixCls('pro-table-form');
         const meColConfig = isForm ? defaultFormColConfig : defaultColConfig;
+        const meOffset = isForm ? 0 : getOffset(domList.length, colSize);
         return (
           <div
             className={classNames(className, {
@@ -790,7 +791,7 @@ const FormSearch = <T, U = {}>({
                     </Form.Item>
                     <Col
                       {...meColConfig}
-                      // offset={getOffset(domList.length, colSize)}
+                      offset={meOffset}
                       key="option"
                       className={classNames(`${className}-option`, {
                         [`${className}-form-option`]: isForm,
